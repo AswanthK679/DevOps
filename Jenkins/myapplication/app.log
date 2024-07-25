@@ -1,0 +1,51 @@
+nohup: ignoring input
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.2)
+
+2024-07-25T05:25:13.504-04:00  INFO 20308 --- [Simple Application] [           main] com.example.demo.SimpleApplication       : Starting SimpleApplication v0.0.1-SNAPSHOT using Java 17.0.11 with PID 20308 (/home/user1/Desktop/DevOps/Jenkins/myapplication/target/myapplication-0.0.1-SNAPSHOT.jar started by user1 in /home/user1/Desktop/DevOps/Jenkins/myapplication)
+2024-07-25T05:25:13.615-04:00  INFO 20308 --- [Simple Application] [           main] com.example.demo.SimpleApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-07-25T05:25:19.405-04:00  INFO 20308 --- [Simple Application] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-25T05:25:19.743-04:00  INFO 20308 --- [Simple Application] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 284 ms. Found 1 JPA repository interface.
+2024-07-25T05:25:23.051-04:00  INFO 20308 --- [Simple Application] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 2015 (http)
+2024-07-25T05:25:23.090-04:00  INFO 20308 --- [Simple Application] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-25T05:25:23.090-04:00  INFO 20308 --- [Simple Application] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-07-25T05:25:23.632-04:00  INFO 20308 --- [Simple Application] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-25T05:25:23.640-04:00  INFO 20308 --- [Simple Application] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 9506 ms
+2024-07-25T05:25:26.106-04:00  INFO 20308 --- [Simple Application] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-25T05:25:26.332-04:00  INFO 20308 --- [Simple Application] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-25T05:25:26.485-04:00  INFO 20308 --- [Simple Application] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-25T05:25:27.519-04:00  INFO 20308 --- [Simple Application] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-25T05:25:27.596-04:00  INFO 20308 --- [Simple Application] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-25T05:25:28.773-04:00  INFO 20308 --- [Simple Application] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@33430fc
+2024-07-25T05:25:28.777-04:00  INFO 20308 --- [Simple Application] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-25T05:25:31.532-04:00  INFO 20308 --- [Simple Application] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-25T05:25:31.829-04:00  INFO 20308 --- [Simple Application] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-25T05:25:32.985-04:00  WARN 20308 --- [Simple Application] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-25T05:25:34.378-04:00  WARN 20308 --- [Simple Application] [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2024-07-25T05:25:34.381-04:00  INFO 20308 --- [Simple Application] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-25T05:25:34.402-04:00  INFO 20308 --- [Simple Application] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-25T05:25:34.453-04:00  INFO 20308 --- [Simple Application] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-25T05:25:34.531-04:00  INFO 20308 --- [Simple Application] [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-07-25T05:25:34.664-04:00 ERROR 20308 --- [Simple Application] [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 2015 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 2015 or configure this application to listen on another port.
+
