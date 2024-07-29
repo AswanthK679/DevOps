@@ -1,0 +1,20 @@
+---
+- name: Install and configure mysql on localhost
+  hosts: localhost
+  become: yes
+  become_user: root
+  tasks:
+    - name: Update the apt cache
+      apt:
+        update_cache: yes
+    - name: Install mysql server
+      apt:
+        name: mysql-server
+        state: present
+    - name: Activating the service
+      service:
+        name: mysql
+        state: started
+        enabled: yes
+    - name: Create new database
+      command: mysql -u root -ppassword -e "create database mydb;"

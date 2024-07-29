@@ -1,0 +1,12 @@
+---
+  - name: Installing java on localhost
+    hosts: localhost
+    become: yes
+    tasks:
+      - name: update apt cache
+        apt:
+          update_cache: yes
+      - name: Installing Java
+        apt:
+          name: openjdk-21-jdk
+          state: latest
